@@ -1,0 +1,30 @@
+Parameters used for Pecube modeling (Braun et al. 2012) to generate figure 4 in the publication Wolff et al. (subm).
+
+topo_file_name = Himalaya_2.txt
+lon0 = 85.050138888924
+lat0 = 27.546527777773
+nx = 1145
+ny = 4665
+dlon =0.00027777777777782
+dlat =0.00027777777777782
+nskip = 120
+
+thickness = 70
+nz = 21
+
+data_folder = STD
+
+age_AFT_flag = 1
+age_AHe_flag = 1
+age_ZHe_flag = 1
+age_BAr_flag = 1
+age_MAr_flag = 1
+age_ZFT_flag = 1
+age_KAr_flag = 1
+age_HAr_flag = 1
+age_FTL_flag = 1
+
+ntime = 1
+time_topo1 = 30
+offset1 = 0
+amplification1 = 1
