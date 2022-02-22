@@ -1,30 +1,80 @@
-Parameters used for Pecube modeling (Braun et al. 2012) to generate figure 4 in the publication Wolff et al. (subm).
+Input file for PECUBE version 4.2 (Braun et al. 2012) used in Wolff et al. (2022, Tectonophysics) 
+to calculate best fit model shown in their Figure 7. Please note, heat production value of 34 W/m-3 
+decreases with an e-folding depth of 20km. Topography derived from 30m SRTM data is stored in 
+Himalaya.txt file. The diffusion parameters for zircon (U-Th)/He thermochronology used in 
+Wolff et al. (2022) differ from the preset values, a value for D0/a2 of 37,800/s and an 
+activation energy Ea of 168 kJ/mol has been used.
 
-topo_file_name = Himalaya_2.txt
+topo_file_name = Himalaya.txt
 lon0 = 85.050138888924
 lat0 = 27.546527777773
 nx = 1145
 ny = 4665
 dlon =0.00027777777777782
 dlat =0.00027777777777782
-nskip = 120
+nskip = 180
 
 thickness = 70
 nz = 21
 
-data_folder = STD
-
 age_AFT_flag = 1
 age_AHe_flag = 1
 age_ZHe_flag = 1
-age_BAr_flag = 1
-age_MAr_flag = 1
-age_ZFT_flag = 1
-age_KAr_flag = 1
-age_HAr_flag = 1
-age_FTL_flag = 1
 
 ntime = 1
-time_topo1 = 30
+time_topo1 = 20
 offset1 = 0
 amplification1 = 1
+
+thermal_diffusivity = 25
+heat_production = -34
+basal_temperature = 850
+sea_level_temperature = 5
+
+Faultung Information
+nfault = 2
+lon1 = 85.00
+lat1 = 28.20
+lon2 = 85.50
+lat2 = 28.20
+
+Fault Geometry
+npoint1 = 4
+r1_1 = 90
+s1_1 = -6.5
+r1_2 = 24.5
+s1_2 = -12
+r1_3 = -29.99
+s1_3 = -33.47
+r1_4 = -80
+s1_4 = -39.61
+
+Time scenario
+nstep1 = 1
+time_start1_1 = 20
+time_end1_1 = 0
+velo1_1 = -5.72
+
+Fault Geometry
+npoint2 = 4
+r2_1 = -80
+s2_1 = -39.61
+r2_2 = -29.99
+s2_2 = -33.47
+r2_3 = 24.5
+s2_3 = -12
+r2_4 = 90
+s2_4 = -6.5
+
+Time scenario
+nstep2 = 1
+time_start2_1 = 20
+time_end2_1 = 0
+velo2_1 = -19.48
+
+misfit_corrected= 1
+
+sample_size_for_first_iteration = 200
+sample_size_for_all_other_iterations = 200
+maximum_number_of_iterations = 40
+number_of_cells_to_resample = 190
