@@ -12,7 +12,7 @@ nx = 1145
 ny = 4665
 dlon =0.00027777777777782
 dlat =0.00027777777777782
-nskip = 180
+nskip = 20
 
 thickness = 70
 nz = 21
@@ -71,10 +71,3 @@ nstep2 = 1
 time_start2_1 = 20
 time_end2_1 = 0
 velo2_1 = -19.48
-
-misfit_corrected= 1
-
-sample_size_for_first_iteration = 200
-sample_size_for_all_other_iterations = 200
-maximum_number_of_iterations = 40
-number_of_cells_to_resample = 190
