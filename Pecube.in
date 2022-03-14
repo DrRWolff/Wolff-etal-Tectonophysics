@@ -1,8 +1,8 @@
 Input file for PECUBE version 4.2 (Braun et al. 2012) used in Wolff et al. (2022, Tectonophysics) 
-to calculate the thermo-kinematic model shown in their Figure 6. Please note, heat production value of 34 W/m-3 
-decreases with an e-folding depth of 20km. Topography derived from 30m SRTM data is stored in 
+to calculate the thermo-kinematic model shown in their Figure 6. Please note, heat production value of 34 °C/Myr 
+decreases with an e-folding depth of 20 km. Topography derived from 30 m SRTM data is stored in 
 Himalaya.txt file. The diffusion parameters for zircon (U-Th)/He thermochronology used in 
-Wolff et al. (2022) differ from the preset values, a value for D0/a2 of 37,800/s and an 
+Wolff et al. (2022) differ from the preset values, a value for D0/a2 of 37,800 s-1 and an 
 activation energy Ea of 168 kJ/mol has been used.
 
 topo_file_name = Himalaya.txt
@@ -74,6 +74,7 @@ velo2_1 = -19.48
 
 misfit_corrected= 1
 
+Neighborhood algorithm
 sample_size_for_first_iteration = 200
 sample_size_for_all_other_iterations = 200
 maximum_number_of_iterations = 40
